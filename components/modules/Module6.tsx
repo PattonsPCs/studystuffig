@@ -56,7 +56,38 @@ export default function Module6() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-slate-800 mb-4 border-l-4 border-purple-500 pl-4">2. The Fundamental Theorems</h2>
+        <h2 className="text-2xl font-bold text-slate-800 mb-4 border-l-4 border-purple-500 pl-4">2. Curl & Divergence (The Operators)</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+            <h3 className="font-bold text-lg text-purple-700 mb-2">Curl (Rotation)</h3>
+            <p className="text-sm text-slate-600 mb-3">
+              Measures the local &quot;spin&quot; of a fluid at a point. 
+              If you drop a paddlewheel into the field, does it spin?
+            </p>
+            <div className="bg-slate-50 p-3 rounded text-center">
+              <strong className="block text-sm mb-1">Formula (3D):</strong>
+              <div className="math-block">{'$$ \\text{curl } \\mathbf{F} = \\nabla \\times \\mathbf{F} $$'}</div>
+            </div>
+            <p className="text-xs text-slate-500 mt-2">Output is a <strong>VECTOR</strong>.</p>
+          </div>
+
+          <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+            <h3 className="font-bold text-lg text-purple-700 mb-2">Divergence (Expansion)</h3>
+            <p className="text-sm text-slate-600 mb-3">
+              Measures net outflow from a point. 
+              Is the point a &quot;source&quot; (positive) or a &quot;sink&quot; (negative)?
+            </p>
+            <div className="bg-slate-50 p-3 rounded text-center">
+              <strong className="block text-sm mb-1">Formula:</strong>
+              <div className="math-block">{'$$ \\text{div } \\mathbf{F} = \\nabla \\cdot \\mathbf{F} $$'}</div>
+            </div>
+            <p className="text-xs text-slate-500 mt-2">Output is a <strong>SCALAR</strong>.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold text-slate-800 mb-4 border-l-4 border-purple-500 pl-4">3. The Fundamental Theorems</h2>
         <p className="text-slate-600 mb-6">These theorems relate an integral over a <strong>Boundary</strong> to an integral over the <strong>Interior</strong>.</p>
 
         <div className="space-y-8">
